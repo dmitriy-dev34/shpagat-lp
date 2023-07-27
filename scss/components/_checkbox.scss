@@ -1,0 +1,85 @@
+/* ------------------- Custom Checkbox -------------------- */
+$checkbox-size: 20px;
+$checkbox-label-fz: 16px;
+
+.check {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.1s ease-in-out;
+  position: relative;
+
+  &__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: none;
+  }
+
+  &__box {
+    flex-shrink: 0;
+    cursor: pointer;
+    display: block;
+    width: $checkbox-size;
+    height: $checkbox-size;
+    background-color: #fff;
+    border: 1px solid #d0d5dd;
+    border-radius: 4px;
+    position: absolute;
+    position: relative;
+    margin-right: 10px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      border: 1px solid var(--main-color);
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    color: var(--color-body-text);
+    font-size: $checkbox-label-fz;
+    line-height: 1.2;
+    left: calc($checkbox-size + 10px);
+
+    &:hover .check__box {
+      border: 1px solid var(--main-color);
+    }
+  }
+
+  &.disabled {
+    opacity: 0.7;
+  }
+}
+
+// Checked
+.check__input:checked + .check__box {
+  background: var(--main-color)
+    url("data:image/svg+xml,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3Cg%20id%3D%226544ec245ff593c3f84690fc9087dbf8%22%3E%0A%20%20%20%20%3Cpath%20id%3D%220445b5d937d516bb263a415b821229b3%22%20d%3D%22M6.20441%2012.012L2.5644%208.37197C2.34572%208.15328%202.34572%207.79871%202.5644%207.58001L3.35634%206.78805C3.57503%206.56934%203.92962%206.56934%204.14831%206.78805L6.60039%209.2401L11.8525%203.98805C12.0712%203.76936%2012.4257%203.76936%2012.6444%203.98805L13.4364%204.78001C13.6551%204.99869%2013.6551%205.35327%2013.4364%205.57197L6.99637%2012.012C6.77766%2012.2307%206.42309%2012.2307%206.20441%2012.012V12.012Z%22%20fill%3D%22white%22%3E%3C%2Fpath%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E")
+    no-repeat center;
+  background-size: 16px 16px;
+  border: 1.4px solid transparent;
+}
+
+// Focused
+.check__input:focus + .check__box {
+  outline: 1.5px solid rgba(#4362a0, 0.6);
+}
+
+.check__input:checked:focus + .check__box {
+  outline: 1.5px solid rgba(#4362a0, 0.6);
+}
+
+// Disabled
+.check__input:disabled + .check__box {
+  background: #f2f4f7;
+  border: 1px solid #d0d5dd;
+}
+
+.check__input:checked:disabled + .check__box {
+  background: #f2f4f7
+    url("data:image/svg+xml,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3Cg%20id%3D%22f075e4064461980275a52059641961f0%22%3E%0A%20%20%20%20%3Cpath%20id%3D%22d22dcae9cb78b3ebc1428f57b3d95bf8%22%20d%3D%22M6.20441%2012.012L2.5644%208.37197C2.34572%208.15328%202.34572%207.79871%202.5644%207.58001L3.35634%206.78805C3.57503%206.56934%203.92962%206.56934%204.14831%206.78805L6.60039%209.2401L11.8525%203.98805C12.0712%203.76936%2012.4257%203.76936%2012.6444%203.98805L13.4364%204.78001C13.6551%204.99869%2013.6551%205.35327%2013.4364%205.57197L6.99637%2012.012C6.77766%2012.2307%206.42309%2012.2307%206.20441%2012.012V12.012Z%22%20fill%3D%22%23BFBFBF%22%3E%3C%2Fpath%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E")
+    no-repeat center;
+  background-size: 16px 16px;
+  border: 1px solid #d0d5dd;
+}

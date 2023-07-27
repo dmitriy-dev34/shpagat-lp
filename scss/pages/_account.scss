@@ -1,0 +1,99 @@
+.account-body {
+  .header {
+    background: #fff;
+  }
+
+  .programs {
+    padding-top: 48px;
+    background: var(--bg-orange_light) !important;
+  }
+
+  .programs__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+
+    &-img {
+      flex-shrink: 0;
+      border-radius: 56px 0 0 0;
+      overflow: hidden;
+      margin-right: 48px;
+    }
+  }
+
+  .programs__title {
+    color: var(--brown-color) !important;
+    font-size: clamp(1.75rem, 1.125rem + 3.13vw, 3.5rem);
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .programs__list {
+    background: #fff !important;
+  }
+
+  .programs__item {
+    display: block;
+
+    &:not(:last-child) {
+      border-color: rgba(#000, 0.12);
+    }
+
+    &:hover .programs__item-link {
+      transform: translateX(10px);
+    }
+
+    &:hover .programs__item-title {
+      color: var(--main-color);
+    }
+  }
+
+  .programs__item-link {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+
+    @media (max-width: 480px) {
+      transform: none !important;
+    }
+  }
+
+  .programs__item-title {
+    color: var(--brown-color);
+    transition: color 0.3s ease-in-out;
+  }
+
+  .programs__item-descr {
+    color: var(--text-color);
+  }
+}
+
+@media (max-width: 768px) {
+  .account-body .programs__header-img {
+    display: none;
+  }
+
+  .account-body .programs__header {
+    display: block;
+    width: 100%;
+    max-width: 600;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+
+  .account-body .programs__title {
+    text-align: center;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .account-body .programs {
+    padding-top: 40px;
+  }
+}

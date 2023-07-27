@@ -1,0 +1,77 @@
+/* ------------------- Custom Input -------------------- */
+.input-field {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &__input {
+    outline: none;
+    display: block;
+    width: 100%;
+    height: 56px;
+    padding: 0 24px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-title);
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid var(--line-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 100px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    &.in-error {
+      border: 1px solid var(--color-error);
+    }
+
+    &.disabled {
+      cursor: default;
+      background: #f2f4f7;
+    }
+
+    &.input-error {
+      border: 1px solid red;
+    }
+  }
+
+  &__input + label {
+    display: block;
+    color: rgb(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    pointer-events: none;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.2s ease 0s;
+    position: absolute;
+    top: 50%;
+    left: 24px;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  &__input:focus {
+    border: 1px solid var(--main-color);
+  }
+
+  &__input:focus + label,
+  &__input:not(:placeholder-shown) + label {
+    cursor: default;
+    top: 0;
+    left: 15px;
+    transition: top 0.2s;
+    background: #fff;
+    color: rgba(#000, 0.7);
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0 5px;
+  }
+}

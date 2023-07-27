@@ -382,7 +382,7 @@ input::placeholder {
 
 strong {
   font-weight: bold;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .list-reset {
@@ -1187,29 +1187,6 @@ strong {
     font-size: 32px;
   }
 }
-.gift {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.gift .ic-gift {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  margin-right: 12px;
-}
-.gift__title {
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.gift__descr {
-  font-size: 16px;
-  line-height: 24px;
-}
-
 .timer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1416,7 +1393,8 @@ strong {
   color: var(--dark-color);
   font-family: var(--font-title);
   font-size: clamp(1.5rem, -0.5rem + 10vw, 2.5rem);
-  font-weight: 600;
+  font-weight: 400;
+  font-style: normal;
   line-height: 1.2;
   margin-bottom: clamp(0rem, -1rem + 5vw, 0.5rem);
 }
@@ -1902,6 +1880,9 @@ strong {
 }
 .footer__list {
   list-style: none;
+}
+.footer__list li {
+  text-decoration: none !important;
 }
 .footer__list li:not(:last-child) {
   margin-bottom: 6px;
@@ -2816,6 +2797,8 @@ strong {
 }
 .login .form__header-title {
   font-family: var(--font-title);
+  font-style: normal !important;
+  font-weight: 400 !important;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 12px;

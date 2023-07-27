@@ -1,0 +1,53 @@
+// стрелки
+.slick-arrow,
+.slick-dots {
+  background-color: transparent;
+  border: none;
+  font-size: 0;
+  list-style: none;
+  cursor: pointer;
+}
+
+// точки
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  bottom: -48px;
+  transform: translateX(-50%);
+
+  li {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(#000, 0.12);
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    button {
+      border: none;
+      background: none;
+    }
+  }
+
+  .slick-active {
+    width: 10px;
+    height: 10px;
+    background: var(--main-color);
+  }
+}
+
+.slick-track {
+  display: flex;
+
+  .slick-slide {
+    height: auto;
+    flex: 0 0 auto;
+  }
+}

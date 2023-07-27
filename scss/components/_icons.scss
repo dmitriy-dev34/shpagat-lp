@@ -1,0 +1,59 @@
+.ui-icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.3s ease-in-out;
+
+  &.ic-login {
+    background-image: url("../img/icons/ic-user.svg");
+  }
+
+  &.ic-exit {
+    background-image: url("../img/icons/ic-exit.svg");
+  }
+}
+
+.ic-check {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background: url("../img/icons/ic-check.svg") no-repeat center;
+  background-size: cover;
+}
+
+.ic-check-2 {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url("../img/icons/ic-check_2.svg") no-repeat center;
+  background-size: cover;
+}
+
+.ic-play {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background: url("../img/icons/ic-play.svg") no-repeat center;
+  background-size: cover;
+}
+
+.ic-plus,
+.ic-minus {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.ic-plus {
+  background-image: url("../img/icons/ic-plus.svg");
+}
+
+.ic-minus {
+  background-image: url("../img/icons/ic-minus.svg");
+}

@@ -1,0 +1,99 @@
+// cta-form
+.cta-form {
+  padding: 48px;
+  background-color: #fff;
+  position: relative;
+
+  &__sale {
+    position: absolute;
+    top: 20%;
+    left: -58px;
+  }
+
+  &__price {
+    width: 100%;
+    text-align: center;
+    border: 2px dashed var(--main-color);
+    border-radius: 100px;
+    padding: 16px 24px;
+    margin-bottom: 24px;
+
+    .price__new {
+      font-size: 24px;
+      span {
+        font-size: 32px;
+        letter-spacing: -2px;
+      }
+    }
+  }
+
+  &__timer {
+    margin-bottom: 24px;
+  }
+
+  .form-order {
+    background: none;
+    border-radius: none;
+    padding: 0;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .cta-form__sale {
+    top: -69px;
+    left: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cta-form {
+    padding: 32px;
+  }
+
+  .cta-form__sale {
+    top: -110px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-form {
+    padding: 24px;
+  }
+
+  .cta-form__price {
+    padding: 16px;
+    margin-bottom: 16px;
+
+    .price__old {
+      margin-bottom: 0;
+    }
+
+    .price__new {
+      font-size: 20px;
+      span {
+        font-size: 26px;
+      }
+    }
+  }
+
+  .cta-form__timer {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 390px) {
+  .cta-form__sale {
+    top: 12px;
+    left: -29px;
+  }
+}
+
+@media (max-width: 360px) {
+  .cta-form {
+    padding: 20px 16px;
+  }
+}

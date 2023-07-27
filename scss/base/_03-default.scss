@@ -1,0 +1,189 @@
+@import "./01-normalize";
+@import "./02-vars";
+
+/* ------------------- Default -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  min-width: 320px;
+  background: #2d231e;
+  color: var(--text-color);
+  font-family: var(--font-default);
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--text-color);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
+
+  &.lock-scroll {
+    overflow: hidden;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+// Прижание footer к низу
+.page__wrapper {
+  width: 100%;
+  max-width: 1920px;
+  min-height: 100vh;
+  background-color: #fff;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.page__main {
+  flex: 1;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+
+  @media (max-width: 599px) {
+    padding: 0 16px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--title-color);
+}
+
+.title-h1,
+.title-h2,
+.title-h3,
+.title-h4,
+.title-h5,
+.title-h6 {
+  color: var(--title-color);
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  cursor: pointer;
+  font-size: inherit;
+  color: inherit;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: var(--font-default);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  background-color: none;
+  font-size: inherit;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  font-size: inherit;
+  color: inherit;
+
+  &::placeholder {
+    color: #666;
+  }
+}
+
+strong {
+  font-weight: bold;
+  font-weight: 700;
+}
+
+.list-reset {
+  list-style: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-caps {
+  text-transform: uppercase;
+}
+
+// плавное появление контента через анимацию
+// animation: fade 0.3s ease-in-out (задать элементу который нужно показывать плавно;
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.section {
+  padding: clamp(2.5rem, 0.893rem + 8.04vw, 7rem) 0;
+}
+
+.section-title {
+  color: var(--title-color);
+  font-family: var(--font-title);
+  font-size: clamp(1.75rem, 1.125rem + 3.13vw, 3.5rem);
+  font-weight: normal;
+  line-height: 1.15;
+  text-transform: uppercase;
+  margin-bottom: clamp(1.5rem, 0.607rem + 4.46vw, 4rem);
+  @media (max-width: 800px) {
+    letter-spacing: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hidden-mob {
+    display: none;
+  }
+}
+
+.text-accent {
+  color: var(--main-color);
+}

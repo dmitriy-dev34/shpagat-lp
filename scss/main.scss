@@ -1,0 +1,35 @@
+@import "./base/03-default";
+
+/* ------------------- COMPONENTS -------------------- */
+@import "./components/preloader";
+@import "./components/icons";
+@import "./components/btn-top";
+@import "./components/btn";
+@import "./components/btn-burger";
+@import "./components/accordion";
+@import "./components/form";
+@import "./components/input";
+@import "./components/checkbox";
+@import "./components/price";
+@import "./components/timer";
+@import "./components/slick";
+@import "./components/modal";
+@import "./components/modal-order";
+@import "./components/sale";
+@import "./components/cta-form";
+
+/* ------------------- BLOCKS -------------------- */
+@import "./blocks/header";
+@import "./blocks/footer";
+@import "./blocks/hero";
+@import "./blocks/who-for";
+@import "./blocks/programs";
+@import "./blocks/advantages";
+@import "./blocks/cta";
+@import "./blocks/results";
+@import "./blocks/faq";
+@import "./blocks/cta-2";
+
+/* ------------------- PAGES -------------------- */
+@import "./pages/login";
+@import "./pages/account";

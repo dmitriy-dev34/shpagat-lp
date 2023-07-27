@@ -1,0 +1,131 @@
+.cta {
+  width: 100%;
+  background: #ece1d8;
+
+  &__head {
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto;
+    margin-bottom: clamp(2rem, 1.286rem + 3.57vw, 4rem);
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__descr {
+    font-size: 20px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 55% auto;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    &::before {
+      display: inline-block;
+      content: "";
+      width: 232px;
+      height: 200px;
+      background: url("../img/cta-img_before.jpg") no-repeat center;
+      background-size: cover;
+      border-radius: 64px 0 0 0;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      z-index: 0;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 112px 0px 0px 0px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .cta__head {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+  }
+
+  .cta__title {
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+
+  .cta__descr {
+    font-size: 18px;
+  }
+
+  .cta__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .cta__content {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+  }
+
+  .cta__img img {
+    border-radius: 64px 0px 0px 0px;
+  }
+
+  .cta__img::before {
+    width: 140px;
+    height: 131px;
+    border-radius: 24px 0 0 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .cta__head {
+    margin-bottom: 32px;
+  }
+
+  .cta__title {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+
+  .cta__descr br {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta__head {
+    margin-bottom: 24px;
+  }
+
+  .cta__title {
+    font-size: clamp(1.75rem, 0.25rem + 7.5vw, 1.8rem);
+    margin-bottom: 16px;
+  }
+
+  .cta__descr {
+    // font-size: 16px;
+    // line-height: 24px;
+    display: none;
+  }
+}
+
+@media (max-width: 390px) {
+  .cta__img {
+    display: none;
+  }
+}

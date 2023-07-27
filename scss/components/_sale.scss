@@ -1,0 +1,37 @@
+.sale {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 117px;
+  height: 117px;
+  background: url("../img/sale-bg.svg") no-repeat center;
+  background-size: cover;
+
+  &__text {
+    color: var(--brown-color);
+    font-size: 17px;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  &__percent {
+    color: var(--white, #fff);
+    font-family: var(--font-title);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .sale {
+    width: 100px;
+    height: 100px;
+  }
+
+  .sale__percent {
+    font-size: 30px;
+  }
+}

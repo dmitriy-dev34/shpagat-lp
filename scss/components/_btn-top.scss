@@ -1,0 +1,54 @@
+#btnScrollTop {
+  cursor: pointer;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  color: #fff;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.3s ease-in;
+
+  &.show {
+    opacity: 0.8;
+    visibility: visible;
+    pointer-events: all;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  // Стрелка
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m10.598 5.013 8.154 8.281c.33.33.33.865 0 1.195l-.499.5a.844.844 0 0 1-1.195 0L10 7.796 2.942 14.98a.844.844 0 0 1-1.195 0l-.5-.499a.844.844 0 0 1 0-1.195l8.155-8.281a.85.85 0 0 1 1.196.007Z' fill='%23fff'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  @media (max-width: 599px) {
+    width: 40px;
+    height: 40px;
+    right: 16px;
+    bottom: 16px;
+  }
+}

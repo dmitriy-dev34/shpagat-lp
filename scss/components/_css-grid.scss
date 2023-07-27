@@ -1,0 +1,124 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 2rem;
+}
+
+/* ------------------- PC Версия -------------------- */
+@media (min-width: 1025px) {
+  .col-2 {
+    grid-column: span 2 / auto;
+  }
+  .col-3 {
+    grid-column: span 3 / auto;
+  }
+  .col-4 {
+    grid-column: span 4 / auto;
+  }
+  .col-5 {
+    grid-column: span 5 / auto;
+  }
+  .col-6 {
+    grid-column: span 6 / auto;
+  }
+  .col-7 {
+    grid-column: span 7 / auto;
+  }
+  .col-8 {
+    grid-column: span 8 / auto;
+  }
+  .col-9 {
+    grid-column: span 9 / auto;
+  }
+  .col-10 {
+    grid-column: span 10 / auto;
+  }
+  .col-11 {
+    grid-column: span 11 / auto;
+  }
+  .col-12 {
+    grid-column: span 12 / auto;
+  }
+}
+
+/* ------------------- Tablet Версия -------------------- */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .grid {
+    gap: 1.5rem;
+  }
+
+  .col-tb-2 {
+    grid-column: span 2 / auto;
+  }
+  .col-tb-3 {
+    grid-column: span 3 / auto;
+  }
+  .col-tb-4 {
+    grid-column: span 4 / auto;
+  }
+  .col-tb-5 {
+    grid-column: span 5 / auto;
+  }
+  .col-tb-6 {
+    grid-column: span 6 / auto;
+  }
+  .col-tb-7 {
+    grid-column: span 7 / auto;
+  }
+  .col-tb-8 {
+    grid-column: span 8 / auto;
+  }
+  .col-tb-9 {
+    grid-column: span 9 / auto;
+  }
+  .col-tb-10 {
+    grid-column: span 10 / auto;
+  }
+  .col-tb-11 {
+    grid-column: span 11 / auto;
+  }
+  .col-tb-12 {
+    grid-column: span 12 / auto;
+  }
+}
+
+/* ------------------- Mobile версия -------------------- */
+@media (max-width: 767px) {
+  .grid {
+    gap: 1rem;
+  }
+
+  .col-mb-2 {
+    grid-column: span 2 / auto;
+  }
+  .col-mb-3 {
+    grid-column: span 3 / auto;
+  }
+  .col-mb-4 {
+    grid-column: span 4 / auto;
+  }
+  .col-mb-5 {
+    grid-column: span 5 / auto;
+  }
+  .col-mb-6 {
+    grid-column: span 6 / auto;
+  }
+  .col-mb-7 {
+    grid-column: span 7 / auto;
+  }
+  .col-mb-8 {
+    grid-column: span 8 / auto;
+  }
+  .col-mb-9 {
+    grid-column: span 9 / auto;
+  }
+  .col-mb-10 {
+    grid-column: span 10 / auto;
+  }
+  .col-mb-11 {
+    grid-column: span 11 / auto;
+  }
+  .col-mb-12 {
+    grid-column: span 12 / auto;
+  }
+}
