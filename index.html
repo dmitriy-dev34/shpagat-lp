@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon (https://realfavicongenerator.net/) -->
+	<link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg">
+	<link rel="icon" type="image/png" href="./favicon/favicon.png">
+	<title>Шпагат - Достигните Идеального Шпагата за Месяц!</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oranienbaum&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" href="./css/main.min.css">
+	<!-- JS -->
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script defer src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script defer src="js/modernizr-webp.js"></script>
+	<script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+	<!-- preloader -->
+	<div class="preloader">
+		<div class="loader"><img src="img/preloader.svg" width="128" height="128" alt=""></div>
+	</div>
+	<button type="button" id="btnScrollTop" title="Наверх"></button>
+	<div class="page__wrapper">
+		<!----------- Header ------------->
+		<header class="header">
+			<div class="container header__container">
+				<a href="./" class="logo">Шпагат<span class="text-accent">Pro</span></a>
+
+				<!-- Nav -->
+				<div class="nav-overlay"></div>
+				<nav class="header__nav nav">
+					<ul class="list-reset header__menu menu">
+						<li class="menu__item"><a href="#who-for" class="menu__link">Для кого?</a></li>
+						<li class="menu__item"><a href="#programs" class="menu__link">Программа</a></li>
+						<li class="menu__item"><a href="#advantages" class="menu__link">Преимущества</a></li>
+						<li class="menu__item"><a href="#results" class="menu__link">Результаты</a></li>
+						<li class="menu__item"><a href="#faq" class="menu__link">Вопросы и ответы</a></li>
+					</ul>
+					<div class="nav__overlay"></div>
+				</nav>
+				<!-- / .nav -->
+
+				<div class="header__right">
+					<!-- login-->
+					<a href="./login.html" target="_blank" class="btn btn-stroke btn-login">
+						<span class="btn-login__text">Личный кабинет</span>
+						<i class="ui-icon ic-login"></i>
+					</a>
+					<!-- / .login -->
+
+					<button type="button" class="header__burger btn-burger" aria-label="Open Menu"><span class="btn-burger__line"></span></button>
+					<!-- / .btn-burger -->
+				</div>
+
+			</div>
+		</header>
+		<!----------- / Header ------------->
+
+		<!----------- Main ------------->
+		<main class="page__main">
+
+			<!----------- Главный экран ------------->
+			<section class="hero">
+				<div class="container hero__container">
+					<div class="hero__content">
+						<div class="hero__text">
+							<div class="hero__label">Авторский видеокурс</div>
+							<h1 class="section-title hero__title">Достигните Идеального Шпагата <span class="text-accent">за Месяц!</span></h1>
+							<p class="hero__descr">Уникальный авторский курс с обучающими видеороликами, чтобы сесть на шпагат с легкостью и грацией уже
+								за
+								месяц!</p>
+						</div>
+						<div class="hero__box">
+							<a href="#cta-block" class="btn hero__btn">Записаться на курс</a>
+							<div class="price hero__price">
+								<div class="price__old">Старая цена: <span>980 ₽</span></div>
+								<div class="price__new">Цена курса: <span>1 ₽</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="hero__img">
+						<picture>
+							<source srcset="./img/woman-1.webp" type="image/webp">
+							<img loading="lazy" src="./img/woman-1.png" width="592" height="615" alt="девушка на шпагате">
+						</picture>
+						<div class="sale hero__sale">
+							<span class="sale__text">скидка</span>
+							<span class="sale__percent">-99%</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Для кого это -->
+			<section class="section who-for" id="who-for">
+				<div class="container who-for__container">
+					<div class="who-for__img">
+						<picture>
+							<source srcset="./img/woman-2.webp" type="image/webp">
+							<img loading="lazy" src="./img/woman-2.png" width="592" height="769" alt="девушка на шпагате">
+						</picture>
+					</div>
+					<div class="who-for__content">
+						<h2 class="section-title who-for__title">этот курс для тебя, <br> если ты:</h2>
+						<ul class="list-reset who-for__list">
+							<li class="who-for__item">
+								<i class="ic-check"></i>
+								<p class="who-for__item-text">Мечтаешь сесть на продольный шпагат, но что-то не получается;</p>
+							</li>
+							<li class="who-for__item">
+								<i class="ic-check"></i>
+								<p class="who-for__item-text">Хочешь понять как правильно выполнять упражнения, чтобы не навредить своему здоровью;</p>
+							</li>
+							<li class="who-for__item">
+								<i class="ic-check"></i>
+								<p class="who-for__item-text">Ты заботишься о своём здоровье и знаешь, что гибкое тело - это одно из показателей вечной
+									молодости;
+								</p>
+							</li>
+							<li class="who-for__item">
+								<i class="ic-check"></i>
+								<p class="who-for__item-text">Никогда не садилась на продольный шпагат и хочешь сделать это правильно под контролем
+									профессионального тренера;</p>
+							</li>
+							<li class="who-for__item">
+								<i class="ic-check"></i>
+								<p class="who-for__item-text">Мечтаешь делать красивые фоточки в шпагате и поражать всех подписчиков своей гибкостью;</p>
+							</li>
+							<li class="who-for__item">
+								<i class="ic-check"></i>
+								<p class="who-for__item-text">Не хватает мотивации и ты давно хочешь внедрить тренировки в свою жизнь.</p>
+							</li>
+						</ul>
+						<a href="#cta-block" class="btn who-for__btn">Записаться на курс</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Программа курса -->
+			<section class="section programs" id="programs">
+				<div class="container">
+					<h2 class="section-title programs__title">Программа курса</h2>
+					<div class="programs__grid">
+						<ul class="programs__list programs__list-1">
+							<li class="programs__item">
+								<i class="ic-play"></i>
+								<div class="programs__item-text">
+									<h3 class="programs__item-title">Видеоурок 1</h3>
+									<p class="programs__item-descr">Ознакомление с курсом и его структурой.</p>
+								</div>
+							</li>
+							<li class="programs__item">
+								<i class="ic-play"></i>
+								<div class="programs__item-text">
+									<h3 class="programs__item-title">Видеоурок 2</h3>
+									<p class="programs__item-descr">Разминка и подготовка к тренировкам.</p>
+								</div>
+							</li>
+							<li class="programs__item">
+								<i class="ic-play"></i>
+								<div class="programs__item-text">
+									<h3 class="programs__item-title">Видеоурок 3</h3>
+									<p class="programs__item-descr">Растяжка ног и бедер.</p>
+								</div>
+							</li>
+							<li class="programs__item">
+								<i class="ic-play"></i>
+								<div class="programs__item-text">
+									<h3 class="programs__item-title">Видеоурок 4</h3>
+									<p class="programs__item-descr">Работа с мышцами промежности и тазобедренных суставов.</p>
+								</div>
+							</li>
+							<li class="programs__item">
+								<i class="ic-play"></i>
+								<div class="programs__item-text">
+									<h3 class="programs__item-title">Видеоурок 5</h3>
+									<p class="programs__item-descr">Упражнения для расширения размаха ног.</p>
+								</div>
+							</li>
+							<li class="programs__item">
+								<i class="ic-play"></i>
+								<div class="programs__item-text">
+									<h3 class="programs__item-title">Видеоурок 6</h3>
+									<p class="programs__item-descr">Техника и правильное вытягивание ног.</p>
+								</div>
+							</li>
+						</ul>
+
+						<ul class="programs__list programs__list-2">
+							<li class="programs__item">
+								<i class="ic-play"></i>
+								<div class="programs__item-text">
+									<h3 class="programs__item-title">Видеоурок 7</h3>
+									<p class="programs__item-descr">Укрепление мышц спины и кора для поддержки.</p>
+								</div>
+							</li>
+							<li class="programs__item">
+								<i class="ic-play"></i>
+								<div class="programs__item-text">
+									<h3 class="programs__item-title">Видеоурок 8</h3>
+									<p class="programs__item-descr">Тренировка на гибкость ног и бедер.</p>
+								</div>
+							</li>
+							<li class="programs__item">
+								<i class="ic-play"></i>
+								<div class="programs__item-text">
+									<h3 class="programs__item-title">Видеоурок 9</h3>
+									<p class="programs__item-descr">Тренировка на гибкость промежности и тазобедренных суставов.</p>
+								</div>
+							</li>
+
+							<li class="programs__item">
+								<i class="ic-play"></i>
+								<div class="programs__item-text">
+									<h3 class="programs__item-title">Видеоурок 10</h3>
+									<p class="programs__item-descr">Тренировка на гибкость спины.</p>
+								</div>
+							</li>
+							<li class="programs__item">
+								<i class="ic-play"></i>
+								<div class="programs__item-text">
+									<h3 class="programs__item-title">Видеоурок 11</h3>
+									<p class="programs__item-descr">Интенсивная тренировка для улучшения гибкости и подготовки к шпагату.</p>
+								</div>
+							</li>
+							<li class="programs__item">
+								<i class="ic-play"></i>
+								<div class="programs__item-text">
+									<h3 class="programs__item-title">Видеоурок 12</h3>
+									<p class="programs__item-descr">Финальные рекомендации и заключительные слова.</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<a href="#cta-block" class="btn programs__btn">Начать проходить курс</a>
+				</div>
+			</section>
+
+			<!-- Преимущества -->
+			<section class="section advantages" id="advantages">
+				<div class="container">
+					<h2 class="section-title advantages__title">Преимущества курса</h2>
+					<ul class="list-reset advantages__list">
+						<li class="advantages__item">
+							<img class="advantages__item-icon" loading="lazy" src="img/icons/ic-advantages_1.svg" width="104" height="72" alt="">
+							<div class="advantages__item-body">
+								<h3 class="advantages__item-title">Обучающие видеоролики</h3>
+								<p class="advantages__item-descr">Получите доступ к 12 интенсивным обучающим видеороликам, которые подробно демонстрируют
+									каждое упражнение.</p>
+							</div>
+						</li>
+						<li class="advantages__item">
+							<img class="advantages__item-icon" loading="lazy" src="img/icons/ic-advantages_2.svg" width="104" height="104" alt="">
+							<div class="advantages__item-body">
+								<h3 class="advantages__item-title">Эффективный подход</h3>
+								<p class="advantages__item-descr">Наш уникальный курс предлагает эффективный подход к освоению идеального шпагата.</p>
+							</div>
+						</li>
+						<li class="advantages__item">
+							<img class="advantages__item-icon" loading="lazy" src="img/icons/ic-advantages_3.svg" width="104" height="104" alt="">
+							<div class="advantages__item-body">
+								<h3 class="advantages__item-title">Без ограничений</h3>
+								<p class="advantages__item-descr">Курс подойдет для людей с разными графиками занятости. Вы можете учиться в удобное для вас
+									время, без ограничений и стресса.</p>
+							</div>
+						</li>
+						<li class="advantages__item">
+							<img class="advantages__item-icon" loading="lazy" src="img/icons/ic-advantages_4.svg" width="104" height="104" alt="">
+							<div class="advantages__item-body">
+								<h3 class="advantages__item-title">Личный кабинет</h3>
+								<p class="advantages__item-descr">После покупки курса вы получаете постоянный доступ в личный кабинет к материалам курса.
+								</p>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</section>
+
+			<!-- CTA-1 -->
+			<section class="section cta" id="cta-block">
+				<div class="container cta__container">
+					<div class="cta__head text-center">
+						<h2 class="section-title cta__title">Не ждите, начните свое преображение уже сейчас!</h2>
+						<p class="cta__descr">Не упустите возможность обрести грацию и уверенность в каждом движении! <br> Закажите курс прямо сеййчас
+							со
+							скидкой и станьте лучшей версией себя!</p>
+					</div>
+					<div class="cta__content">
+						<div class="cta__img">
+							<picture>
+								<source srcset="./img/cta-woman.webp" type="image/webp">
+								<img loading="lazy" src="./img/cta-woman.jpg" class="" width="685" height="623" alt="">
+							</picture>
+						</div>
+						<div class="cta-form">
+							<!-- sale -->
+							<div class="sale cta-form__sale">
+								<span class="sale__text">скидка</span>
+								<span class="sale__percent">-99%</span>
+							</div>
+							<!-- price -->
+							<div class="price cta-form__price">
+								<div class="price__old">Старая цена: <span>980 ₽</span></div>
+								<div class="price__new">Цена курса: <span>1 ₽</span></div>
+							</div>
+							<!-- timer -->
+							<div class="timer cta-form__timer" id="timer1">
+								<div class="timer__title">До конца скидки осталось:</div>
+								<div class="timer__box">
+									<div class="timer__item">
+										<div class="timer__item-num days">00</div>
+										<div class="timer__item-text">дней</div>
+									</div>
+									<div class="timer__item">
+										<div class="timer__item-num accent-num hours">00</div>
+										<div class="timer__item-text">часов</div>
+									</div>
+									<div class="timer__item">
+										<div class="timer__item-num accent-num minutes">00</div>
+										<div class="timer__item-text">минут</div>
+									</div>
+									<div class="timer__item">
+										<div class="timer__item-num accent-num seconds">00</div>
+										<div class="timer__item-text">секунд</div>
+									</div>
+								</div>
+							</div>
+							<!-- form -->
+							<form action="" method="POST" class="form form-order">
+								<div class="form__body">
+									<div class="input-field">
+										<input type="email" class="input-field__input input-email" placeholder=" " autocomplete="off" required>
+										<label class="input-field__label">Введите email адрес</label>
+									</div>
+									<button type="submit" class="btn form__btn">Получить доступ</button>
+								</div>
+								<div class="form__footer">
+									<label class="check form__check">
+										<input class="check__input" type="checkbox" name="param-name">
+										<span class="check__box"></span>
+										<span class="check__label">Нажимая кнопку "Оплатить" Вы даете согласие на <a href="#" target="_blank">обработку
+												персональных данных</a>, а также подтверждаете ознакомление с публичной <a href="#" target="_blank">офертой</a> и <a
+												href="#" target="_blank">тарифами</a>.</span>
+									</label>
+									<label class="check form__check">
+										<input class="check__input" type="checkbox" name="param-name">
+										<span class="check__box"></span>
+										<span class="check__label">Нажимая кнопку "Получить доступ" Вы подтверждаете ознакомление с автоматическими списаниями.
+											Первое списание через 7 дней после подписки и далее, согласно <a href="#" target="_blank">тарифу</a> раз в 3 дня 297₽,
+											или 693₽ за 7 дней, или 990₽ за 10 дней, или 1980₽ за 20 дней, или 2970₽ за 30 дней доступа в личный кабинет.</span>
+									</label>
+								</div>
+							</form>
+							<!-- / .form -->
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Результаты учеников -->
+			<section class="section results" id="results">
+				<div class="container">
+					<h2 class="section-title results__title">Результаты некоторых участников нашего курса</h2>
+					<ul class="list-reset results__list">
+						<!-- отзыв-1 -->
+						<li class="results__slide">
+							<!-- slide-1 -->
+							<div class="results__item">
+								<div class="results__item-photo">
+									<picture>
+										<source srcset="./img/result-photo_1.webp" type="image/webp">
+										<img loading="lazy" src="./img/result-photo_1.jpg" class="" width="592" height="390" alt="">
+									</picture>
+									<div class="results__review review">
+										<div class="review__body">
+											<h3 class="review__title">Наталья, 29 лет</h3>
+											<p class="review__text">Курс по шпагату — находка для меня! Я всегда мечтала о такой гибкости, но казалось, что это
+												недостижимо. Обучающие видеоролики дали мне уверенность и мотивацию, чтобы двигаться вперед. Я смогла освоить шпагат
+												уже к концу курса! Большое спасибо тренерам за поддержку и понимание!</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- отзыв-2 -->
+						<li class="results__slide">
+							<div class="results__item">
+								<div class="results__item-photo">
+									<picture>
+										<source srcset="./img/result-photo_2.webp" type="image/webp">
+										<img loading="lazy" src="./img/result-photo_2.jpg" class="" width="592" height="390" alt="">
+									</picture>
+									<div class="results__review review">
+										<div class="review__body">
+											<h3 class="review__title">Елизавета, 25 лет</h3>
+											<p class="review__text">Курс превзошел все мои ожидания! Видеоролики были структурированы и понятны, что очень помогло
+												в освоении упражнений. Результаты пришли быстрее, чем я ожидала. Сейчас я легко сажусь на шпагат и ощущаю себя
+												уверенно и грациозно. Рекомендую этот курс всем!</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- отзыв-3 -->
+						<li class="results__slide">
+							<div class="results__item">
+								<div class="results__item-photo">
+									<picture>
+										<source srcset="./img/result-photo_3.webp" type="image/webp">
+										<img loading="lazy" src="./img/result-photo_3.jpg" class="" width="592" height="390" alt="">
+									</picture>
+									<div class="results__review review">
+										<div class="review__body">
+											<h3 class="review__title">Анна, 32 года</h3>
+											<p class="review__text">Я уже пробовала разные методы для освоения шпагата, но этот курс действительно сработал.
+												Обучающие видеоролики помогли мне правильно выполнять упражнения и избежать возможных ошибок. Я была приятно
+												удивлена, как быстро улучшилась моя гибкость. Теперь я могу совершать грациозные движения, о которых раньше даже не
+												мечтала!
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- отзыв-4 -->
+						<li class="results__slide">
+							<div class="results__item">
+								<div class="results__item-photo">
+									<picture>
+										<source srcset="./img/result-photo_4.webp" type="image/webp">
+										<img loading="lazy" src="./img/result-photo_4.jpg" class="" width="592" height="390" alt="">
+									</picture>
+									<div class="results__review review">
+										<div class="review__body">
+											<h3 class="review__title">Дарья, 27 лет</h3>
+											<p class="review__text">Курс по шпагату дал мне новые возможности и вызовы. Было трудно, но благодаря обучающим
+												видеороликам, я не останавливалась на полпути. Тренеры были всегда рядом и помогали преодолевать трудности. Сейчас я
+												с удовольствием выполняю шпагат и продолжаю развиваться. Это был потрясающий опыт, и я счастлива, что выбрала именно
+												этот курс!</p>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!----------- FAQ ------------->
+			<section class="section faq" id="faq">
+				<div class="container">
+					<h2 class="section-title faq__title text-center">Часто задаваемые вопросы</h2>
+
+					<div class="faq__accordion accordion">
+						<div class="accordion__item">
+							<div class="accordion__item-head">
+								<div class="accordion__item-title">Как долго длится ваш курс?</div>
+								<i class="ic-plus"></i>
+							</div>
+							<div class="accordion__item-content">
+								<p>Курс "Идеальный шпагат за месяц" рассчитан на 30 дней. Вы получите доступ к обучающим видеороликам и сможете
+									практиковаться в течение месяца для достижения желаемых результатов.</p>
+							</div>
+						</div>
+						<div class="accordion__item">
+							<div class="accordion__item-head">
+								<div class="accordion__item-title">Могу ли я начать заниматься, если у меня совсем нет гибкости?</div>
+								<i class="ic-plus"></i>
+							</div>
+							<div class="accordion__item-content">
+								<p>Да, конечно! Наш курс предназначен для участников с разным уровнем гибкости. Обучающие видеоролики предложат постепенное
+									прогрессирование, помогая вам развивать гибкость с учетом вашего текущего уровня.</p>
+							</div>
+						</div>
+						<div class="accordion__item">
+							<div class="accordion__item-head">
+								<div class="accordion__item-title">Как часто нужно тренироваться?</div>
+								<i class="ic-plus"></i>
+							</div>
+							<div class="accordion__item-content">
+								<p>Мы рекомендуем заниматься курсом не менее 3-4 раз в неделю для достижения наилучших результатов. Однако, вы можете
+									выбрать
+									удобное для вас расписание занятий.</p>
+							</div>
+						</div>
+						<div class="accordion__item">
+							<div class="accordion__item-head">
+								<div class="accordion__item-title">Есть ли возрастные ограничения для участия в курсе?</div>
+								<i class="ic-plus"></i>
+							</div>
+							<div class="accordion__item-content">
+								<p>Наш курс открыт для всех возрастных категорий. Однако, если у вас есть медицинские противопоказания, рекомендуем
+									проконсультироваться с врачом перед началом занятий.</p>
+							</div>
+						</div>
+						<div class="accordion__item">
+							<div class="accordion__item-head">
+								<div class="accordion__item-title">Как получить доступ к видеороликам после покупки?</div>
+								<i class="ic-plus"></i>
+							</div>
+							<div class="accordion__item-content">
+								<p>После успешной покупки курса, вы получите уникальный логин и пароль для доступа к закрытой обучающей платформе. Там будут
+									расположены все обучающие видеоролики и дополнительные материалы.</p>
+							</div>
+						</div>
+						<div class="accordion__item">
+							<div class="accordion__item-head">
+								<div class="accordion__item-title">Гарантируете ли вы результаты после завершения курса?</div>
+								<i class="ic-plus"></i>
+							</div>
+							<div class="accordion__item-content">
+								<p>Мы не можем гарантировать результаты для всех участников, так как успех зависит от индивидуальных особенностей и усилий
+									каждого. Однако, мы гарантируем, что наш курс предоставит вам все необходимые инструменты и поддержку для успешного
+									достижения цели — идеального шпагата!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA-2 -->
+			<section class="section cta-2">
+				<div class="container cta-2__container">
+					<div class="cta-2__grid">
+						<div class="cta-2__left">
+							<div class="cta-2__head">
+								<h2 class="section-title cta-2__title">Готовы стать гибкими <br> и изящными?</h2>
+								<p class="cta-2__descr">Авторская программа тренировок уже ждет тебя!</p>
+							</div>
+							<ul class="list-reset cta-2__advantages">
+								<li>
+									<i class="ic-check-2"></i>
+									Тело приобретает легкость движений</li>
+								<li>
+									<i class="ic-check-2"></i>
+									Осанка станет статной и красивой</li>
+								<li>
+									<i class="ic-check-2"></i>
+									Улучшите растяжку</li>
+								<li>
+									<i class="ic-check-2"></i>
+									Грамотно снизите массу тела</li>
+								<li>
+									<i class="ic-check-2"></i>
+									Повысите качество своего здоровья</li>
+							</ul>
+						</div>
+						<div class="cta-2__right">
+							<div class="cta-form">
+								<!-- sale -->
+								<div class="sale cta-form__sale">
+									<span class="sale__text">скидка</span>
+									<span class="sale__percent">-99%</span>
+								</div>
+								<!-- price -->
+								<div class="price cta-form__price">
+									<div class="price__old">Старая цена: <span>980 ₽</span></div>
+									<div class="price__new">Цена курса: <span>1 ₽</span></div>
+								</div>
+								<!-- timer -->
+								<div class="timer cta-form__timer" id="timer2">
+									<div class="timer__title">До конца скидки осталось:</div>
+									<div class="timer__box">
+										<div class="timer__item">
+											<div class="timer__item-num days">00</div>
+											<div class="timer__item-text">дней</div>
+										</div>
+										<div class="timer__item">
+											<div class="timer__item-num accent-num hours">00</div>
+											<div class="timer__item-text">часов</div>
+										</div>
+										<div class="timer__item">
+											<div class="timer__item-num accent-num minutes">00</div>
+											<div class="timer__item-text">минут</div>
+										</div>
+										<div class="timer__item">
+											<div class="timer__item-num accent-num seconds">00</div>
+											<div class="timer__item-text">секунд</div>
+										</div>
+									</div>
+								</div>
+								<!-- form -->
+								<form action="" method="POST" class="form form-order">
+									<div class="form__body">
+										<div class="input-field">
+											<input type="email" class="input-field__input input-email" placeholder=" " autocomplete="off" required>
+											<label class="input-field__label">Введите email адрес</label>
+										</div>
+										<button type="submit" class="btn form__btn">Получить доступ</button>
+									</div>
+									<div class="form__footer">
+										<label class="check form__check">
+											<input class="check__input" type="checkbox" name="param-name">
+											<span class="check__box"></span>
+											<span class="check__label">Нажимая кнопку "Оплатить" Вы даете согласие на <a href="#" target="_blank">обработку
+													персональных данных</a>, а также подтверждаете ознакомление с публичной <a href="#" target="_blank">офертой</a> и
+												<a href="#" target="_blank">тарифами</a>.</span>
+										</label>
+										<label class="check form__check">
+											<input class="check__input" type="checkbox" name="param-name">
+											<span class="check__box"></span>
+											<span class="check__label">Нажимая кнопку "Получить доступ" Вы подтверждаете ознакомление с автоматическими
+												списаниями.
+												Первое списание через 7 дней после подписки и далее, согласно <a href="#" target="_blank">тарифу</a> раз в 3 дня
+												297₽,
+												или 693₽ за 7 дней, или 990₽ за 10 дней, или 1980₽ за 20 дней, или 2970₽ за 30 дней доступа в личный кабинет.</span>
+										</label>
+									</div>
+								</form>
+								<!-- / .form -->
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+		</main>
+		<!-- / .page__main -->
+
+		<!----------- Footer ------------->
+		<div class="footer">
+			<div class="footer__top">
+				<div class="container footer__top-container">
+					<div class="footer__column">
+						<ul class="footer__list">
+							<li>2022 ИП Романюк Андрей Юрьевич</li>
+							<li>ИНН: 032356620546</li>
+							<li>ОГРНИП: 322784700063249</li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<ul class="footer__list">
+							<li>Тел.: +7 499 226-15-47</li>
+							<li><a href="#" target="_blank" class="footer__link">support@horoscopeyou.com</a></li>
+							<li>Telegram: @mtsudbi</li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<ul class="footer__list">
+							<li><a href="#" target="_blank" class="footer__link">Политика конфиденциальности</a></li>
+							<li><a href="#" target="_blank" class="footer__link">Условия использования</a></li>
+							<li><a href="#" target="_blank" class="footer__link">Политика обработки данных</a></li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<ul class="footer__list">
+							<li><a href="#" target="_blank" class="footer__link">Управление услугой</a></li>
+							<li><a href="#" target="_blank" class="footer__link">Пользовательское соглашение</a></li>
+							<li><a href="#" target="_blank" class="footer__link">Заявка на возврат</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer__bottom">
+				<div class="container footer__bottom-container">
+					<div class="footer__column">
+						<div class="footer__payments">
+							<img loading="lazy" src="img/payments.svg" width="221" height="24" alt="Способ оплаты">
+						</div>
+					</div>
+					<div class="footer__column footer__copyright">
+						<p>© Copyright. Все права защищены 2023 г. </p>
+					</div>
+					<div class="footer__column">
+						<div class="footer__security">
+							<img loading="lazy" src="img/security-logo.png" width="321" height="32" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<!-- / .page__wrapper -->
+</body>
+
+</html>
